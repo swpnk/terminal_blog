@@ -1,3 +1,7 @@
-from models.post import Post0
-post = Post("title", "content", "author")
-print(post.content)
+from models.post import Post
+# post = Post(blog_id='123', title='First Post', content='This is content', author = 'Swapnik')
+# post.save_to_mongo()
+
+posts = Post.from_blog(id = "123")
+
+print([post for post in posts])

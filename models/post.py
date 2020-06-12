@@ -13,7 +13,7 @@ class Post(object):
         self.title = title
         self.content = content
         self.author = author
-        self.date  = date
+        self.created_date  = date
         self.id = uuid.uuid4().hex if id is None else id #uuid 4 is random value. 
 
     def save_to_mongo(self):
